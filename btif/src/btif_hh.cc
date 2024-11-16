@@ -1409,7 +1409,7 @@ static bt_status_t connect(RawAddress* bd_addr) {
  * Returns         bt_status_t
  *
  ******************************************************************************/
-static bt_status_t disconnect(RawAddress* bd_addr, bool reconnect_allowed) {
+static bt_status_t disconnect(RawAddress* bd_addr, UNUSED_ATTR bool reconnect_allowed) {
   CHECK_BTHH_INIT();
   BTIF_TRACE_EVENT("BTHH: %s", __func__);
   btif_hh_device_t* p_dev;
